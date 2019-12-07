@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../2WSSP.srcs/sources_1/new/newComp.vhd" \
+
+# Do not sort compile order
+nosort
