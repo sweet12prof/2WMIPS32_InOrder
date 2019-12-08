@@ -59,9 +59,19 @@ begin
                                 
                                 if(W2WE = '1') then 
                                     MEM(to_integer(unsigned(W2WA))) <= W2WD ;
-                                end if;
+                                end if;                                                              
                             end if;
                          end process;
+    
+--    sync_Write_Way2 : process(clk)
+--                         begin
+--                            if(falling_edge(clk)) then                                                            
+--                                if(W2WE = '1') then 
+--                                    MEM(to_integer(unsigned(W2WA))) <= W2WD ;
+--                                end if;
+--                            end if;
+--                         end process;
+                         
                          
      async_READWAY_1 : process(W1A1, W1A2, mem)
                           begin 
