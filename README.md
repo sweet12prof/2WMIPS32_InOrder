@@ -4,7 +4,8 @@ Design of a 2-Way scalar 5-stage pieline processor based on a subset(15 instruct
 
 ## Behavior
 * The processor implements instruction level parallelism by employing both pipelinning and superscalar techniques.
-* It is a 2-issue(Way), 5-stage super-pipeline processor.
+* It is an **IN-ORDER,** 2-issue(Way), 5-stage, super-pipelined 32-bit dynamically scheduled MIPS based processor.
+* Dynamic scheduling is based on scoreboarding techniques
 * With the help of an instruction scheduler, the processor executes a pair of instructions in program order when 
   there are no data or output dependences between them.
 * For an ideal case, where all pair of instructions, from the top of the instruction memory, are not dependent on   
