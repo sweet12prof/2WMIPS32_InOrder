@@ -48,10 +48,11 @@ Design of a 2-Way scalar 5-stage pieline processor based on a subset(15 instruct
  * Design contains the ff architectural state elements sufficient for an instruction pair
      * 4 ported(read ports) register File() with 2 write ports and 2 write enables
      * Instruction memory(Imem), issues 2 instructions based on address
-     * Data Mem (Dmem) holds data
+     * Data Mem (Dmem) holds data, implemented as a simple Dual port ram
      * Instruction Scheduler, determines if execution pair are a valid pair for execution 
      * Control Unit
      * Hazard Detection adn Resolution Unit
+     * Pair of ALU
 
 ## Testing 
   * The program in the instruction memory, consists of a MIPS program translated into hex.
