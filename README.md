@@ -59,6 +59,10 @@ Design of a 2-Way scalar 5-stage pieline processor based on a subset(15 instruct
   * The program is an implementation of the "ADD-SHIFT" multiplication Algorithm to multiply 2 numbers
   * The numbers in the particular program are 40 and 5, hence a result of 200 is expected at the end of the program 
   * The program exits execution by saving the result into memory Location 100
+ 
+    
+    
+  
   
   
      
