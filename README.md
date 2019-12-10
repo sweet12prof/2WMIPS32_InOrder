@@ -24,8 +24,8 @@ Design of a 2-Way scalar 5-stage pieline processor based on a subset(15 instruct
 
 ## Instruction Set
 
-|  Instruction |  Operation  | OpCode |
-|--------------| ------------| -----------|
+|  Instruction |  Operation  | 
+|--------------| ------------| 
 |  add      |  addition |
 | sub      |  subtraction |
 |  and      |  bitwise AND |
