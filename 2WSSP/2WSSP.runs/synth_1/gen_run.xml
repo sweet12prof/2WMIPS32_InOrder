@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a15tcpg236-1" LaunchTime="1575842814">
-  <File Type="PA-TCL" Name="WSsPregFile.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="WSsPregFile_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="WSsPregFile_reports.tcl"/>
-  <File Type="RDS-RDS" Name="WSsPregFile.vds"/>
-  <File Type="RDS-UTIL" Name="WSsPregFile_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="WSsPregFile_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="WSsPregFile.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="WSsPregFile_timing_summary_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7a15tcpg236-1" LaunchTime="1576593119">
   <File Type="VDS-TIMING-PB" Name="WSsPregFile_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="WSsPregFile_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="WSsPregFile.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="WSsPregFile_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="WSsPregFile_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="WSsPregFile_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="WSsPregFile.vds"/>
+  <File Type="REPORTS-TCL" Name="WSsPregFile_reports.tcl"/>
+  <File Type="PA-TCL" Name="WSsPregFile.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/2WSsPregFile.vhd">

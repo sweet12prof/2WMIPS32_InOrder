@@ -1,13 +1,13 @@
 #-----------------------------------------------------------
-# Vivado v2018.3 (64-bit)
-# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
-# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Dec  8 22:06:57 2019
-# Process ID: 6920
-# Current directory: C:/Users/TI LAB/Desktop/2WMIPS32/2WSSP/2WSSP.runs/synth_1
-# Command line: vivado.exe -log WSsPregFile.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source WSsPregFile.tcl
-# Log file: C:/Users/TI LAB/Desktop/2WMIPS32/2WSSP/2WSSP.runs/synth_1/WSsPregFile.vds
-# Journal file: C:/Users/TI LAB/Desktop/2WMIPS32/2WSSP/2WSSP.runs/synth_1\vivado.jou
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Dec 17 14:32:02 2019
+# Process ID: 22453
+# Current directory: /home/sweet12Prof/Desktop/Project/2WMIPS32_StaticScheduling/2WSSP/2WSSP.runs/synth_1
+# Command line: vivado -log WSsPregFile.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source WSsPregFile.tcl
+# Log file: /home/sweet12Prof/Desktop/Project/2WMIPS32_StaticScheduling/2WSSP/2WSSP.runs/synth_1/WSsPregFile.vds
+# Journal file: /home/sweet12Prof/Desktop/Project/2WMIPS32_StaticScheduling/2WSSP/2WSSP.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source WSsPregFile.tcl -notrace
 Command: synth_design -top WSsPregFile -part xc7a15tcpg236-1
@@ -15,34 +15,34 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a15t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a15t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9324 
+INFO: Helper process launched with PID 22495 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 430.766 ; gain = 98.516
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1826.164 ; gain = 215.551 ; free physical = 129 ; free virtual = 11134
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'WSsPregFile' [C:/Users/TI LAB/Desktop/2WMIPS32/2WSSP/2WSSP.srcs/sources_1/new/2WSsPregFile.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'WSsPregFile' [/home/sweet12Prof/Desktop/Project/2WMIPS32_StaticScheduling/2WSSP/2WSSP.srcs/sources_1/new/2WSsPregFile.vhd:48]
 WARNING: [Synth 8-4767] Trying to implement RAM 'mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
 Reason is one or more of the following :
 	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
 	2: Unable to determine number of words or word size in RAM. 
 	3: No valid read/write found for RAM. 
 RAM "mem_reg" dissolved into registers
-INFO: [Synth 8-256] done synthesizing module 'WSsPregFile' (1#1) [C:/Users/TI LAB/Desktop/2WMIPS32/2WSSP/2WSSP.srcs/sources_1/new/2WSsPregFile.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'WSsPregFile' (1#1) [/home/sweet12Prof/Desktop/Project/2WMIPS32_StaticScheduling/2WSSP/2WSSP.srcs/sources_1/new/2WSsPregFile.vhd:48]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 486.352 ; gain = 154.102
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1887.918 ; gain = 277.305 ; free physical = 241 ; free virtual = 11163
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 486.352 ; gain = 154.102
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1887.918 ; gain = 277.305 ; free physical = 230 ; free virtual = 11161
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a15tcpg236-1
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 486.352 ; gain = 154.102
----------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a15tcpg236-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 602.441 ; gain = 270.191
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1895.918 ; gain = 285.305 ; free physical = 229 ; free virtual = 11160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1923.637 ; gain = 313.023 ; free physical = 138 ; free virtual = 11087
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -94,7 +94,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 810.984 ; gain = 478.734
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 2201.617 ; gain = 591.004 ; free physical = 297 ; free virtual = 10910
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -107,7 +107,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 810.984 ; gain = 478.734
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 2201.621 ; gain = 591.008 ; free physical = 301 ; free virtual = 10908
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -119,7 +119,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 810.984 ; gain = 478.734
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 2201.621 ; gain = 591.008 ; free physical = 311 ; free virtual = 10907
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -143,8 +143,20 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 810.984 ; gain = 478.734
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 2201.621 ; gain = 591.008 ; free physical = 281 ; free virtual = 10907
 ---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 2201.621 ; gain = 591.008 ; free physical = 281 ; free virtual = 10907
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
@@ -153,40 +165,28 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Start Renaming Generated Instances
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 810.984 ; gain = 478.734
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 810.984 ; gain = 478.734
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 2201.621 ; gain = 591.008 ; free physical = 281 ; free virtual = 10908
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 810.984 ; gain = 478.734
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 2201.621 ; gain = 591.008 ; free physical = 281 ; free virtual = 10908
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 810.984 ; gain = 478.734
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 2201.621 ; gain = 591.008 ; free physical = 280 ; free virtual = 10908
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 810.984 ; gain = 478.734
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 2201.621 ; gain = 591.008 ; free physical = 280 ; free virtual = 10908
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -222,28 +222,29 @@ Report Instance Areas:
 |1     |top      |       |  4567|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 810.984 ; gain = 478.734
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 2201.621 ; gain = 591.008 ; free physical = 280 ; free virtual = 10908
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 810.984 ; gain = 478.734
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 810.984 ; gain = 478.734
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 2201.621 ; gain = 591.008 ; free physical = 283 ; free virtual = 10911
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 2201.625 ; gain = 591.008 ; free physical = 283 ; free virtual = 10911
 INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2201.633 ; gain = 0.000 ; free physical = 297 ; free virtual = 10978
 INFO: [Netlist 29-17] Analyzing 704 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'WSsPregFile' is not ideal for floorplanning, since the cellview 'WSsPregFile' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 810.984 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2225.633 ; gain = 0.000 ; free physical = 228 ; free virtual = 10909
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 11 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 810.984 ; gain = 491.363
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 810.984 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:51 . Memory (MB): peak = 2225.633 ; gain = 638.941 ; free physical = 361 ; free virtual = 11042
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2225.633 ; gain = 0.000 ; free physical = 360 ; free virtual = 11041
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/TI LAB/Desktop/2WMIPS32/2WSSP/2WSSP.runs/synth_1/WSsPregFile.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/sweet12Prof/Desktop/Project/2WMIPS32_StaticScheduling/2WSSP/2WSSP.runs/synth_1/WSsPregFile.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file WSsPregFile_utilization_synth.rpt -pb WSsPregFile_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 22:07:27 2019...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 17 14:33:08 2019...
