@@ -1,11 +1,11 @@
 # 2WMIPS32
 ## General Info
-Design of a 2-Way scalar 5-stage pieline processor based on a subset(15 instructions) of the MIPS instruction set.
+Design of a 2-Way scalar, 5-stage pieline, **IN-ORDER** processor based on a subset(15 instructions) of the MIPS instruction set.
 
 ## Behavior
 * The processor implements instruction level parallelism by employing both pipelinning and superscalar techniques.
 * It is an **IN-ORDER,** 2-issue(Way), 5-stage, super-pipelined 32-bit dynamically scheduled MIPS based processor.
-* Dynamic scheduling is based on scoreboarding techniques
+* It is Dynamic scheduled which implies the scheduler is implemented in hardware. 
 * With the help of an instruction scheduler, the processor executes a pair of instructions in program order when 
   there are no data or output dependences between them.
 * For an ideal case, where all pair of instructions, from the top of the instruction memory, are not dependent on   
@@ -60,6 +60,14 @@ Design of a 2-Way scalar 5-stage pieline processor based on a subset(15 instruct
   * The program is an implementation of the "ADD-SHIFT" multiplication Algorithm to multiply 2 numbers
   * The numbers in the particular program are 40 and 5, hence a result of 200 is expected at the end of the program 
   * The program exits execution by saving the result into memory Location 100
+  * A simple run of the testbench file reveals this. 
+  * To run a different program with the tesbench, do as follows : 
+      * Write a mips program based on the implemented subset
+      * Assemble it and generate a hex file 
+      * Edit the Imem file 
+   
+  
+  
  
     
     
