@@ -9,8 +9,8 @@ Design of a 2-Way scalar, 5-stage pieline, **IN-ORDER** processor based on a sub
 * With the help of an instruction scheduler, the processor executes a pair of instructions in program order when 
   there are no data or output dependences between them.
 * For an ideal case, where all pair of instructions, from the top of the instruction memory, are not dependent on   
-  the other, the CPU records a CPI = 1, an IPC > 1 and also twice the throughput of a single scalar pipeline 
-  design.
+  the other, and there exist no overlapping dependencies then, this CPU design records a CPI = 1, an IPC > 1 and also twice the throughput of a single scalar pipeline design.
+* CPI > 1 and IPC >= 1 for non ideal cases, which is mostly the case.
 * In the case of a data dependency, the sceond instruction in the pair shuffled out and replaced by a nop,
   and the pc set to point to the swapped instruction.
 * In the worst case scenario, where all pairs are dependent, the processor acts as a single-scalar pipeline.
