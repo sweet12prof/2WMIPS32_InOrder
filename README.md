@@ -65,7 +65,7 @@ Design of a 2-Way scalar, 5-stage pieline, **IN-ORDER** processor based on a sub
  * Schematic created for design is included in project directory.
  * VHDL used to describe design in vivado webpack
  * Design is based on the havard archiutecture( Working on a Von Neumann Equivalent )
- * Design contains the ff architectural state elements sufficient for an instruction pair
+ * Design contains the ff architectural state and combitional sub-systems sufficient for an instruction pair
      * register File with 4 read ports and 2 write ports.
      * Instruction memory(Imem), issues 2 instructions based on address
      * Data Mem (Dmem) holds data, implemented as a simple Dual port ram
