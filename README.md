@@ -91,10 +91,10 @@ Design of a 2-Way scalar, 5-stage pieline, **IN-ORDER** processor based on a sub
  ## Synthesis For FPGA
   * The registerFile used in the design couldn't be synthesised using block RAMS
   * This forces usage of registers by the synthesiser and utilizes a lot of resources
-  * The design synthesises successfully for a basys 3 artix 7 FPGA, this can be used for a standard if you intend to 
+  * The design synthesises successfully for a basys 3 artix 7 FPGA, this can be used as the baseline if you intend to 
     synthesise for an fpga
   * Don't synthesise the tesbench won't work
-  * The top module is what you're looking for, as for I/O, The unbounded Outputs include memory Address and data ports 
+  * The top module is what you're looking for, as for I/O, The unbounded Outputs include memory Address and data ports, 
     this can be changed by editing all the way from the datapath file through to the top level module 
   
    
