@@ -4,7 +4,7 @@ Design of a 2-Way scalar, 5-stage pieline, **IN-ORDER** processor based on a sub
 
 ## Behavior(Elaborate explanations in presentation files)
 * The processor implements instruction level parallelism by employing both pipelinning and multiple issue techniques.
-* It is an **IN-ORDER,** 2-issue(Way), 5-stage, super-pipelined 32-bit dynamically scheduled MIPS based processor.
+* It is an **IN-ORDER,** 2-issue(Way), 5-stage pipeline, dynamically scheduled, 32-bit MIPS based processor.
 * It is Dynamic scheduled which implies the scheduler is implemented in hardware. 
 * With the help of an instruction scheduler, the processor executes a pair of instructions in program order when 
   there are no data or output dependences between them.
@@ -14,7 +14,7 @@ Design of a 2-Way scalar, 5-stage pieline, **IN-ORDER** processor based on a sub
 * In the case of a data dependency, the sceond instruction in the pair shuffled out and replaced by a nop,
   and the pc set to point to the swapped instruction.
 * In the worst case scenario, where all pairs are dependent, the processor acts as a single-scalar pipeline.
-* The design compels the ff instructions(Beq, J, Jal and Jr) to be executed on the 1st path(Way).The 
+* The microarchitecture design compels the ff instructions(Beq, J, Jal and Jr) to be executed on the 1st path(Way).The 
   instruction scheduler makes sure of this. 
 * You can find out how it does this by checking out the presentation files or checking out the instruction 
   scheduler project. 
